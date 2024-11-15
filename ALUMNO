@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include "Usuario.h"
+using namespace std;
+
+class Alumno :public Usuario {
+private:
+	int numCuenta;
+
+public:
+	Alumno(string nombre, 
+		string apellidoPaterno, 
+		string apellidoMaterno, 
+		string email, 
+		int numUsuario, 
+		bool prestamo, 
+		bool activo, 
+		int numCuenta) {}
+
+	int getNumCuenta() const { return numCuenta; }
+	void setNumCuenta(const numCuenta) { this->numCuenta = numCuenta; }
+};
